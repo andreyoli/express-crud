@@ -12,5 +12,6 @@ routes.delete('/user_destroy', UserController.delete)
 routes.get('/user_index', UserController.index)
 routes.get('/user_find', UserController.show)
 routes.put('/user_update', UserController.update)
+routes.get('/user_auth', UserController.auth)
 
 module.exports = routes

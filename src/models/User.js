@@ -15,8 +15,6 @@ class User extends Model {
     )
     User.beforeCreate('PassHash', async User => {
       User.password = await bcrypt.hash(User.password, 10)
-
-      console.log(User.password)
     })
   }
 }
